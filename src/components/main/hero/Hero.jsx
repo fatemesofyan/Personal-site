@@ -1,16 +1,17 @@
-"use client"
+import HeroProfile from "./details/heroProfile";
+import HeroShowcase from "./details/heroShowcase";
 
-import React from 'react'
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 export default function Hero() {
   return (
-    <div>
-        <DotLottieReact
-      src="path/to/animation.lottie"
-      loop
-      autoplay
-    />
-
-    </div>
-  )
+    <section
+      className="relative w-full h-[600px] bg-cover bg-bottom mb-80"
+      style={{ backgroundImage: "url('/image/background.png')" }}
+    >
+      <div className="absolute inset-0 flex items-center justify-around z-10 ">
+          <HeroProfile />
+          <HeroShowcase />
+        
+      </div>
+    </section>
+  );
 }

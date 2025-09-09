@@ -16,7 +16,6 @@ export default function HeaderSite() {
       <div className="flex items-center gap-3">
         <ThemeToggleButton />
         <ResumeDownloadButton />
-				
       </div>
     </div>
   );
