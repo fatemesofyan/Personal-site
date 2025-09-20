@@ -29,7 +29,7 @@ module.exports = {
             dark: "#3b42520", // کارت در حالت تیره
           },
           muted: "#E5E7EB", // borderها و جداکننده‌ها در حالت روشن
-          mutedDark: "#374151", // معادل تیره muted
+          mutedDark: "#4B5563", // معادل تیره muted
         },
 
         // رنگ متن

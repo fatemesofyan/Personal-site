@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Menu, CircleX } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Logo from "../../logo/logo";
+import Logo from "../../ui/logo/logo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

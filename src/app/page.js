@@ -1,12 +1,14 @@
 import HeaderSite from "@/components/header/HeaderSite";
-import Hero from "../components/main/hero/Hero";
+import FooterSite from "../components/footer/FooterSite";
+import MainSite from "../components/main/mainSite";
 
 
 export default function Home() {
 	return (
 		<>
 				<HeaderSite />
-				<Hero/>
+				<MainSite/>
+				<FooterSite/>
 		</>
 	);
 }

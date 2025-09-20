@@ -1,14 +1,10 @@
 import React from "react";
+import Button from "../../ui/ Button/ button";
 
 export default function ResumeDownloadButton() {
   return (
-    <div className="flex flex-col gap-5">
-      <button
-        className="bg-primary hover:bg-primaryHover text-neutral text-base rounded-full px-5 py-2
-			flex  items-center "
-      >
-        دریافت رزومه
-      </button>
+       <div className="flex flex-col gap-5">
+      <Button>دریافت رزومه</Button>
     </div>
   );
 }
