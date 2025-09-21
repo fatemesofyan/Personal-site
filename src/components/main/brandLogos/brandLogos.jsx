@@ -1,22 +1,32 @@
 import React from "react";
 
 const logos = [
-  { src: "/logos/amazon.png", alt: "Amazon" },
-  { src: "/logos/google.png", alt: "Google" },
-  { src: "/logos/microsoft.png", alt: "Microsoft" },
-  { src: "/logos/apple.png", alt: "Apple" },
+  { src: "image/imglogoBar/oracle.png", alt: "oracle" },
+  { src: "image/imglogoBar/springBoot.png", alt: "springBoot" },
+  { src: "image/imglogoBar/docker.png", alt: "docker" },
+  { src: "image/imglogoBar/kubernetes.png", alt: "kubernetes" },
+  { src: "image/imglogoBar/hibernate.png", alt: "hibernate" },
+  { src: "image/imglogoBar/java.png", alt: "java" },
 ];
 
 export default function BrandLogos() {
   return (
-    <div className="py-10 bg-gray-100 dark:bg-gray-900">
-      <h3 className="text-center text-lg font-bold mb-6 text-primaryText-heading-light dark:text-primaryText-heading-dark">
-        همکاران ما
-      </h3>
-      <div className="flex flex-wrap justify-center items-center gap-8">
-        {logos.map((logo, index) => (
-          <img key={index} src={logo.src} alt={logo.alt} className="h-12 object-contain" />
-        ))}
+    <div className="py-10  dark:bg-gray-900">
+      <div className="flex justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 ">
+          {logos.map((logo, index) => (
+            <div
+              key={index}
+              className="w-36 h-28 flex items-center justify-center gap-5 "
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="max-h-44 max-w-[95%] object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
