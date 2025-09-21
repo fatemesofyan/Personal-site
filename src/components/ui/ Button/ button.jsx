@@ -13,7 +13,7 @@ export default function Button({
 
   const variantClasses = {
     primary: "bg-primary hover:bg-primaryHover",
-    secondary: "bg-background-default text-primary border-2 border-solid border-primary hover:text-primaryHover",
+    secondary: "bg-background-default text-primary border-2 border-solid border-primary dark:bg-background-dark hover:text-primaryHover",
   };
 
   const shapeClasses = {

@@ -6,10 +6,10 @@ export default function FeatureCard() {
     <div className=" m-5 flex flex-col md:flex-row  justify-around gap-6">
       <div>
         <Image
-          src="/image/programming.png"
+          src="/image/programmingimg.png"
           alt="programming"
-          width={450}
-          height={450}
+          width={400}
+          height={400}
         />
       </div>
       <div className="w-[550px] flex flex-col items-center justify-center gap-4 ">

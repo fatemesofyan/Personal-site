@@ -29,10 +29,10 @@ export default function LearnMoreCard() {
       </div>
       <div>
         <Image
-          src="/image/learnmoreCardImg.png"
+          src="/image/learnmoreCard.png"
           alt="learnmoreCardImg"
-          width={550}
-          height={550}
+          width={500}
+          height={500}
         />
       </div>
     </div>
