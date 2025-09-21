@@ -27,6 +27,7 @@ export default function SubscribeForm() {
   />
   
   <Button
+  variant="primary" shape="pill"
     type="submit"
     className="absolute top-1/2 left-3  -translate-y-1/2  "
   >

@@ -7,7 +7,7 @@ import SubscribeForm from "./detalist/subscribeForm";
 export default function FooterSite() {
   return (
     <div
-      className="relative w-full bg-cover bg-top"
+      className="relative w-full  bg-cover bg-top"
       style={{ backgroundImage: "url('/image/backgroundFooter.png')" }}
     >
       <SocialLinks />

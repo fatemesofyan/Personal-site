@@ -1,12 +1,34 @@
 import React from "react";
 
-export default function Button({ children, onClick, className, type = "button", ...props }) {
+export default function Button({
+  children,
+  onClick,
+  className,
+  type = "button",
+  variant = "primary", 
+  shape = "rounded-full", 
+  ...props
+}) {
+    const baseClasses = "text-neutral text-base px-6 py-2 flex items-center  justify-center transition-transform duration-200";
+
+  const variantClasses = {
+    primary: "bg-primary hover:bg-primaryHover",
+    secondary: "bg-background-default text-primary border-2 border-solid border-primary hover:text-primaryHover",
+  };
+
+  const shapeClasses = {
+    rounded: "rounded-md",
+    pill: "rounded-full",
+    square: "rounded-none",
+  };
+
+  const hoverScale = "hover:scale-105"
+
   return (
     <button
-      type={type}  
+      type={type}
       onClick={onClick}
-      className={`bg-primary hover:bg-primaryHover text-neutral text-base rounded-full
-         px-6 py-2 flex items-center ${className}`}
+           className={`${baseClasses} ${variantClasses[variant]} ${shapeClasses[shape]} ${hoverScale} ${className}`}
       {...props}
     >
       {children}
